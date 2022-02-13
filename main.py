@@ -1,1 +1,3 @@
-print("hello drone project")
+x = "hello"
+
+print(x)
