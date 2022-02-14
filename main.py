@@ -1,3 +1,1 @@
-x = "hello"
-
-print(x)
+print("Drone Project is a go")
