@@ -7,8 +7,7 @@ ap = argparse.ArgumentParser()
 ap.add_argument("-i", "--image", help = "path to the image")
 args = vars(ap.parse_args())
 # load the image
-image = cv2.imread(args["image"])
-
+image = cv2.imread(args["image"])\
 #color_detection_red_version
 
 # define the list of boundaries
