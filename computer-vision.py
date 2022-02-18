@@ -31,3 +31,7 @@ for (lower, upper) in boundaries:
 	cv2.waitKey(0)
 
 	#JAI TESTING
+<<<<<<< HEAD
+=======
+	#Siddharth Testing
+>>>>>>> 1678952b8f5cd99b19a25cc0a6c1b24234f5427e
