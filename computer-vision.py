@@ -2,6 +2,21 @@
 import numpy as np
 import argparse
 from cv2 import cv2
+#some functions that are being worked on so that the program can run regardless of brighntess of image (changes boundaries)
+def brightness(image,x,y):
+    color = tuple(image[x, y])
+    colorbrightness = (color[0]*0.0722)+(color[1]*0.7152)+(color[2]*0.2126)
+   # print(color)
+    return colorbrightness
+
+def average_brightness(image):
+    sum = 0
+    count = 0
+    for row in range(0,612):
+      for col in range(0,408):
+        sum = sum + brightness(image,row,col)
+        count += 1
+    return sum/count
 # construct arguments for cli
 ap = argparse.ArgumentParser()
 ap.add_argument("-i", "--image", help = "path to the image")
