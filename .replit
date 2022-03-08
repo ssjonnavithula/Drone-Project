@@ -1,0 +1,2 @@
+language = "bash"
+run = "python computer-vision.py -i image1.jpeg"
