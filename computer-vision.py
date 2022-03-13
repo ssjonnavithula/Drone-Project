@@ -33,7 +33,7 @@ boundaries = [
 	#([0, 0, 0], [255, 255, 255])
 ]
 
-
+# we need a main
 for (lower, upper) in boundaries:
 	# create NumPy arrays from the boundaries
 	lower = np.array(lower, dtype = "uint8")
