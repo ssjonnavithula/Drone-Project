@@ -19,7 +19,7 @@ def average_brightness(image):
     return sum/count
 # construct arguments for cli
 ap = argparse.ArgumentParser()
-ap.add_argument("-i", "--image", help = "path to the image")
+ap.add_argument("-i", "--image", help = "Path Here")
 args = vars(ap.parse_args())
 # load the image
 image = cv2.imread(args["image"])
